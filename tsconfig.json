@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2022",                       /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */ 
+    "module": "ESNext",                      /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "allowJs": false,                          /* Allow javascript files to be compiled. */
+    "strict": true,                           /* Enable all strict type-checking options. */
+       "moduleResolution": "node",               /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+      "types": [
+      "node",
+      "@wdio/globals/types",
+      "@wdio/cucumber-framework",
+      "expect-webdriverio"
+    ]
+  }
+}
