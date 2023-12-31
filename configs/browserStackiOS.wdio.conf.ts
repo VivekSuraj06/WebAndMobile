@@ -1,6 +1,6 @@
 const headless: boolean = process.env.HEADLESS as unknown as boolean;
 import type { Options } from '@wdio/types';
-import { config as buildConfig } from './base.wdio.conf.js';
+import { config as buildConfig } from './base.wdio.conf.ts';
 
 const iOSCap = {
         'bstack:options': {
@@ -28,8 +28,8 @@ export const config: Options.Testrunner = {
       },
     ], 'shared-store'
   ],
-  user: 'mailqatest_cXsLbu', // Replace/Add your username
-  key: 'TEPExGhJQfYqSq4qteYf', // Replace/Add your access key
+  user: ' ', // Replace/Add your username
+  key: ' ', // Replace/Add your access key
   hostname: 'hub.browserstack.com',
   region: 'eu-central-1',
 };

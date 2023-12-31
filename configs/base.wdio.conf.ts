@@ -34,7 +34,7 @@ export const config: WebdriverIO.Config = {
     // will be called from there.
     //
     specs: [
-        './src/features/*.feature',
+        '../src/features/*.feature',
     ],
     // Patterns to exclude.
     exclude: [
@@ -137,7 +137,7 @@ export const config: WebdriverIO.Config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',
         ["html-nice", {
-            outputDir: './reports/html-reports/',
+            outputDir: '../reports/html-reports/',
             filename: 'report.html',
             reportTitle: 'Test Report Title',
             linkScreenshots: true,
@@ -190,7 +190,7 @@ export const config: WebdriverIO.Config = {
      */
     onPrepare: function (config, capabilities) {
         reportAggregator = new ReportAggregator({
-            outputDir: './reports/html-reports/',
+            outputDir: '../reports/html-reports/',
             filename: 'master-report.html',
             reportTitle: 'Master Report',
             browserName: 'chrome',

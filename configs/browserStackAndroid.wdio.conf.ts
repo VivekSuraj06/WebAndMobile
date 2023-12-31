@@ -1,5 +1,5 @@
 import type { Options } from '@wdio/types';
-import { config as buildConfig } from './base.wdio.conf.js';
+import { config as buildConfig } from './base.wdio.conf.ts';
 
 const androidCap = {
         'bstack:options': {
@@ -21,14 +21,14 @@ export const config: Options.Testrunner = {
     [
       'browserstack',
       {
-        //Upload the app in browserstack and replace the bs app path
+       //Upload the app in browserstack and replace the app path
         app: 'bs://42c9fa854987c6008da408b82e655aa35303e696',
         browserstackLocal: true
       },
     ], 'shared-store'
   ],
-  user: 'mailqatest_cXsLbu', // Replace/Add your username
-  key: 'TEPExGhJQfYqSq4qteYf', // Replace/Add your access key
+  user: ' ', // Replace/Add your username
+  key: ' ', // Replace/Add your accessKey
   hostname: 'hub.browserstack.com',
   region: 'eu-central-1'
 };

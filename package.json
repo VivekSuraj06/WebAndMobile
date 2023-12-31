@@ -5,12 +5,12 @@
   "description": "DailyMail QA test with Appium/web/browserStack Integration",
   "type": "module",
   "scripts": {
-    "web-test": "wdio run web.wdio.conf.ts --cucumberOpts.tags @webTest",
-    "android-test": "wdio run android.wdio.conf.ts --cucumberOpts.tags @androidTest",
-    "iOS-test": "wdio run android.wdio.conf.ts --cucumberOpts.tags @iosTest",
-    "bs-web": "wdio run browserStack.wdio.conf.ts --cucumberOpts.tags @webTest",
-    "bs-and": "wdio run browserStackAndroid.wdio.conf.ts --cucumberOpts.tags @androidTest",
-    "bs-iOS": "wdio run browserStackIOS.wdio.conf.ts --cucumberOpts.tags @iOSTest"
+    "web-test": "wdio run configs/web.wdio.conf.ts --cucumberOpts.tags @webTest",
+    "android-test": "wdio run configs/android.wdio.conf.ts --cucumberOpts.tags @androidTest",
+    "iOS-test": "wdio run configs/android.wdio.conf.ts --cucumberOpts.tags @iosTest",
+    "bs-web": "wdio run configs/browserStackWeb.wdio.conf.ts --cucumberOpts.tags @webTest",
+    "bs-and": "wdio run configs/browserStackAndroid.wdio.conf.ts --cucumberOpts.tags @androidTest",
+    "bs-iOS": "wdio run configs/browserStackIOS.wdio.conf.ts --cucumberOpts.tags @iOSTest"
   },
   "dependencies": {
     "@tsconfig/node18": "1.0.3",

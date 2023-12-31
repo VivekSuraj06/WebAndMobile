@@ -1,5 +1,5 @@
 import type { Options } from '@wdio/types';
-import { config as buildConfig } from './base.wdio.conf.js';
+import { config as buildConfig } from './base.wdio.conf.ts';
 import * as path from 'path';
 
 const iOSCap = {

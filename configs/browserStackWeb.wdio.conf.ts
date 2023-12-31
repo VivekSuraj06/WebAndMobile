@@ -1,11 +1,11 @@
 import type { Options } from '@wdio/types';
-import { config as buildConfig } from './base.wdio.conf.js';
+import { config as buildConfig } from './base.wdio.conf.ts';
 
 const webCap = {
   browserName: 'Chrome',
   'bstack:options': {
-    os: 'Windows',
-    osVersion: '11',
+    os: 'OS X',
+    osVersion: 'Monterey',
     browserVersion: 'latest',
     timeouts: { implicit: 10000}
   }
@@ -15,11 +15,10 @@ export const config: Options.Testrunner = {
   ...buildConfig,
   capabilities: [webCap],
   services: ['browserstack', 'shared-store'],
-  user: ' ', //Update/Add your user ID
-  key: ' ', // Update/Add your Access Key
+  user: ' ', // Replace/Add your username
+  key: ' ', // Replace/Add your access key
   region: 'eu-central-1'
 };
-
 
 
 
