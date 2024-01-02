@@ -14,7 +14,6 @@ Daily mail news webpage and mobile apps automation
 - seperate screen files for android/iOS and web
 - Appium
 - Cloud testing Integration with BrowserStack
-- Docker service
 - Share data serice
 - Separate config files for each service
 - Reporting
